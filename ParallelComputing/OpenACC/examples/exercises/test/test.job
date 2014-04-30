@@ -1,0 +1,7 @@
+#!/bin/csh
+#PBS -l walltime=0:20
+#PBS -j oe
+#PBS -A TG-TRA120043
+cd $PBS_O_WORKDIR
+
+./a.out

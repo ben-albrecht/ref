@@ -1,0 +1,23 @@
+
+General OpenACC usage, acts on the next scope (e.g. for loop)
+OpenACC directive, tells compiler to break up next scope (e.g. for loop)
+into separate GPU Streaming Multiprocessors (SMs)
+#pragma acc kernels[clauses..]
+
+Data Directive / Data Regions (usage detailed in examples)
+#pragma acc data [clauses..]
+  Possible Clauses:
+    #pragma acc data copy(list){  }
+      Copies 'list' from host (CPU) to device (GPU) so that
+      'list' is not copied back and forth numerous times
+      *Be Careful!* Things done by CPU to 'list' inside this scope
+      will be overwritten when 'list' is copied back.
+
+Parallel Regions
+
+
+  Device Tuning
+    #pragma acc parallel loop \
+         device_type(nvidia) num_gangs(200) ...\
+         device_type(radeon) num_gangs(400) ...
+

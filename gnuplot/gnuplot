@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#GNUPLOT
+
+#GNUPLOT -> SHELL 
+`shell`
+#SHELL -> GNUPLOT (foreground)
+`fg`

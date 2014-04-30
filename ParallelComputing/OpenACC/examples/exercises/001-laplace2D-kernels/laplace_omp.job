@@ -1,0 +1,10 @@
+#!/bin/csh
+#PBS -l walltime=3:00
+#PBS -j oe
+#PBS -A TG-TRA120043
+
+cd $PBS_O_WORKDIR
+
+setenv OMP_NUM_THREADS 6
+./laplace2d_omp
+
