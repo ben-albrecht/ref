@@ -1,6 +1,6 @@
 (gdb)
 --- Q-Chem ---
-1. Compile With Debug
+1. Compile With Debug (-g)
 
 gdb $QC/exe/qcprog.exe
 run foo.in foo_scratch
