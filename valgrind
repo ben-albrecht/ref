@@ -1,5 +1,0 @@
-==== Valgrind With Q-Chem ====
-1. Compile Q-Chem with DEBUG
-
-$QC/bin/qchem_for_debug foo.in
-valgrind $QC/exe/qcprog.exe ./foo.in ./foo_scratch
