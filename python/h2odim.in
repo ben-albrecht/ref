@@ -1,0 +1,59 @@
+$molecule
+0 1
+--
+0 1
+O       -1.06894        2.58476       -0.04887
+H       -0.16971        2.43518        0.33714
+H       -1.12297        1.94757       -0.80463
+---
+0 1
+O        2.40989        2.65835       -0.41025
+H        3.37713        2.77773       -0.23492
+H        2.05593        3.57951       -0.48982
+$end
+
+$rem
+BASIS           6-31G*
+EXCHANGE        PBE
+CORRELATION     PBE
+EMBEDMAN        1
+EMBED_THEORY    1
+SCF_ALGORITHM   DIIS
+incfock         0
+CCMAN2          true
+PURCAR          222
+MAXSCF          100
+symmetry        false
+sym_ignore      true
+cc_symmetry     false
+$end
+
+@@@
+
+$molecule
+0 1
+--
+0 1
+O        2.40989        2.65835       -0.41025
+H        3.37713        2.77773       -0.23492
+H        2.05593        3.57951       -0.48982
+--
+0 1
+O       -1.06894        2.58476       -0.04887
+H       -0.16971        2.43518        0.33714
+H       -1.12297        1.94757       -0.80463
+$end
+
+$rem
+BASIS           6-31G*
+EXCHANGE        HF
+CORRELATION     CCSD(T)
+SCF_ALGORITHM   DIIS
+incfock         0
+CCMAN2          true
+MAXSCF          100
+symmetry        false
+sym_ignore      true
+cc_symmetry     false
+PURCAR          222
+$end
