@@ -21,8 +21,8 @@ compile armadillo programs with `-larmadillo`
 
 Adjustments for Q-Chem 
 ======================
-File: $QC/build/armadillo/include/armadillo_bits/config.hpp.cmake
-Comment out the following with `//` :
+File: $QC/armadillo/include/armadillo_bits/config.hpp.cmake
+Comment out the following with `//`, remove build/armadillo, and recompile :
 ------------------------------
     #define ARMA_BLAS_UNDERSCORE 
 
