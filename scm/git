@@ -1,0 +1,6 @@
+# Recommended to use this alias for git up instead of git pull
+    # Prevents nonlinearities in git history
+    # See this Stack Overflow thread for details:
+    # http://stackoverflow.com/questions/15316601/in-what-cases-could-git-pull-be-harmful 
+
+git config --global alias.up 'pull --ff-only --all -p'
