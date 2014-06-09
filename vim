@@ -4,20 +4,33 @@
 
 #Replace String ( g = global, often times g is default)
 `:%s/foo/bar/g`
+
 #Dollar signs after everything:
 `:set nolist`
 
 #z-folds
 #Create fold (motion)
+
 `zf`
 #Delete Fold
+
 `zd`
 #Open Fold
+
 `zo`
 #OR
+
 `<Right arrow Key>`
 #Close Fold
+
 `zc`
+# Search only in open folds
+
+`:set fdo-=search`
+# Perform commands only on lines in open folds
+
+`:folddoopen <command>`
+# e.g. s/old/new/ge
 
 # ##### #
 #vimdiff#
