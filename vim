@@ -1,6 +1,12 @@
 # ######### #
 #Vi-IMproved#
 # ######### #
+#
+# See value of variable in vim
+`:set var?`
+
+# See value of all defined variables in vim
+`:set all`
 
 #Replace String ( g = global, often times g is default)
 `:%s/foo/bar/g`
