@@ -2,6 +2,7 @@
 #Vi-IMproved#
 # ######### #
 #
+#
 # See value of variable in vim
 `:set var?`
 
@@ -15,6 +16,9 @@
 `:set nolist`
 
 #z-folds
+# Create fold from outside of file
+vim -c "1,2fold| mkview" file.txt
+
 #Create fold (motion)
 
 `zf`
