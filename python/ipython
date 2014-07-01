@@ -1,0 +1,3 @@
+# Reload pyc files in ipy
+%load_ext autoreload
+%autoreload 2
