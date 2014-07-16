@@ -1,14 +1,23 @@
 = Run Test Suite =
 
+== my/branch ==
+
+== the/trunk ==
+
+== Test Merge via dry run == 
 
 
 = Merge to Trunk =
+# In my/branch (bja_2)
 svn commit
 svn update .
 svn merge ^/trunk
 
 == Resolving Conflicts ==
 See `svn status help` to find conflicts
+
+== Compile and Test ==
+Verify some jobs using the new features work properly
 
 
 == Final Commit ==
