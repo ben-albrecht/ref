@@ -2,6 +2,8 @@
 #Vi-IMproved#
 # ######### #
 #
+#TODO: writing functions in vim
+# FUCK this is hard
 #
 # See value of variable in vim
 `:set var?`
@@ -14,6 +16,10 @@
 
 #Dollar signs after everything:
 `:set nolist`
+
+# Relops
+`:set rnu`
+`:set !rnu`
 
 #z-folds
 # Create fold from outside of file
