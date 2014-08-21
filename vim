@@ -5,21 +5,27 @@
 #TODO: writing functions in vim
 # FUCK this is hard
 #
+# Switch to previously closed buffer
+:buffer #7
+
+# List current buffers
+:ls
+
 # See value of variable in vim
-`:set var?`
+:set var?
 
 # See value of all defined variables in vim
-`:set all`
+:set all
 
 #Replace String ( g = global, often times g is default)
-`:%s/foo/bar/g`
+:%s/foo/bar/g
 
 #Dollar signs after everything:
-`:set nolist`
+:set nolist
 
 # Relops
-`:set rnu`
-`:set !rnu`
+:set rnu
+:set !rnu
 
 #z-folds
 # Create fold from outside of file
@@ -27,25 +33,25 @@ vim -c "1,2fold| mkview" file.txt
 
 #Create fold (motion)
 
-`zf`
+zf
 #Delete Fold
 
-`zd`
+zd
 #Open Fold
 
-`zo`
+zo
 #OR
 
-`<Right arrow Key>`
+<Right arrow Key>
 #Close Fold
 
-`zc`
+zc
 # Search only in open folds
 
-`:set fdo-=search`
+:set fdo-=search
 # Perform commands only on lines in open folds
 
-`:folddoopen <command>`
+:folddoopen <command>
 # e.g. s/old/new/ge
 
 # ##### #
