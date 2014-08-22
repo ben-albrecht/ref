@@ -5,8 +5,19 @@
 #TODO: writing functions in vim
 # FUCK this is hard
 #
+# Tabs
+:tabs         #list all tabs including their displayed windows
+:tabm 0       #move current tab to first
+:tabm         #move current tab to last
+:tabm {i}     #move current tab to position i+1
+
+:tabn         #go to next tab
+:tabp         #go to previous tab
+:tabfirst     #go to first tab
+:tablast      #go to last tab
+
 # Switch to previously closed buffer
-:buffer #7
+":buffer #"<num>
 
 # List current buffers
 :ls
