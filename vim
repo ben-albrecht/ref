@@ -17,7 +17,10 @@
 :tablast      #go to last tab
 
 # Switch to previously closed buffer
-":buffer #"<num>
+:buffer #  (<num>)
+:b#
+# e.g. switch to buffer 3
+:b3
 
 # List current buffers
 :ls
