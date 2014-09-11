@@ -58,6 +58,9 @@ dp
 #Jump to the previous change.
 [c 
 
+# Turn it off!
+:diffoff
+
 #Switch to the other split window (CTRL-W CTRL-W does the same
 #thing, in case you let go of the CTRL key a bit later)
 Ctrl W + w 
