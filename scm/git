@@ -1,5 +1,8 @@
 # Git
 
+# My git address:  
+# git@bitbucket.org:ben_albrecht/
+
 # See what has changed since previous commit (-1 = last commit, -2 = last last commmit ... )
 git whatchanged -1
 
