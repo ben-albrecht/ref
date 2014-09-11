@@ -2,18 +2,57 @@
 #Vi-IMproved#
 # ######### #
 #
-#
+#TODO: writing functions in vim
+#TODO: make Shift+Tab (in insert mode) delete 4 spaces
+
+
+# sed
+:s/foo/bar/g        Change each 'foo' to 'bar' in the current line.
+:%s/foo/bar/g       Change each 'foo' to 'bar' in all the lines.
+:5,12s/foo/bar/g    Change each 'foo' to 'bar' for all lines from line 5 to line 12 (inclusive).
+:'a,'bs/foo/bar/g   Change each 'foo' to 'bar' for all lines from mark a to mark b inclusive (see Note below).
+:.,$s/foo/bar/g     Change each 'foo' to 'bar' for all lines from the current line (.) to the last line ($) inclusive.
+:.,+2s/foo/bar/g    Change each 'foo' to 'bar' for the current line (.) and the two next lines (+2).
+:g/^baz/s/foo/bar/g Change each 'foo' to 'bar' in each line starting with 'baz'.
+:'<,'>s/foo/bar/g   When compiled with +visual, change each 'foo' to 'bar' for all lines within a visual selection. 
+                    Vim automatically appends the visual selection range ('<,'>) for any ex command when you select 
+                    an area and enter :. Also, see Note below.
+
+# Tabs
+:tabs         #list all tabs including their displayed windows
+:tabm 0       #move current tab to first
+:tabm         #move current tab to last
+:tabm {i}     #move current tab to position i+1
+
+:tabn         #go to next tab
+:tabp         #go to previous tab
+:tabfirst     #go to first tab
+:tablast      #go to last tab
+
+# Switch to previously closed buffer
+:buffer #  (<num>)
+:b#
+# e.g. switch to buffer 3
+:b3
+
+# List current buffers
+:ls
+
 # See value of variable in vim
-`:set var?`
+:set var?
 
 # See value of all defined variables in vim
-`:set all`
+:set all
 
 #Replace String ( g = global, often times g is default)
-`:%s/foo/bar/g`
+:%s/foo/bar/g
 
 #Dollar signs after everything:
-`:set nolist`
+:set nolist
+
+# Relops
+:set rnu
+:set !rnu
 
 #z-folds
 # Create fold from outside of file
@@ -21,25 +60,25 @@ vim -c "1,2fold| mkview" file.txt
 
 #Create fold (motion)
 
-`zf`
+zf
 #Delete Fold
 
-`zd`
+zd
 #Open Fold
 
-`zo`
+zo
 #OR
 
-`<Right arrow Key>`
+<Right arrow Key>
 #Close Fold
 
-`zc`
+zc
 # Search only in open folds
 
-`:set fdo-=search`
+:set fdo-=search
 # Perform commands only on lines in open folds
 
-`:folddoopen <command>`
+:folddoopen <command>
 # e.g. s/old/new/ge
 
 # ##### #

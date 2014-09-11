@@ -12,10 +12,23 @@ test_func () {
 input_1=$1
 input_2=$2
 ..
+return 0 (true)
+return 1 (false)
 }
 
 # Calling function:
 test_func arg1 arg2 .. 
+
+# Using functions as conditions
+TrueOrFalse() {
+    return $1
+}
+if TrueOrFalse 1; then
+    echo "Should not get here"
+else
+    echo "TrueOrFalse 1 => False"
+fi
+
 
 ##############################
 # Conditional Statements
