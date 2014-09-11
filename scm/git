@@ -1,3 +1,8 @@
+# Git
+
+# See what has changed since previous commit (-1 = last commit, -2 = last last commmit ... )
+git whatchanged -1
+
 # Recommended to use this alias for git up instead of git pull
     # Prevents nonlinearities in git history
     # See this Stack Overflow thread for details:
@@ -5,14 +10,10 @@
 
 git config --global alias.up 'pull --ff-only --all -p'
 
-
 # Starting a new git directory
-
 git init
-
 # THE LINE WHERE I HAVE TO CHANGE SOMETHING:
 git remote add origin git@bitbucket.org:ben_albrecht/<RepoName>.git # add repo to bitbucket
-
 git commit -a # If there is anything in the repo yet + adds them all to repository
 git push -u origin --all # pushes up the repo and its refs for the first time
 git push -u origin --tags # pushes up any tags
