@@ -3,6 +3,10 @@
 # My git address:  
 # git@bitbucket.org:ben_albrecht/
 
+# Drop current unstaged changes
+git stash save --keep-index
+git stash drop
+
 # See what has changed since previous commit (-1 = last commit, -2 = last last commmit ... )
 git whatchanged -1
 
@@ -20,3 +24,4 @@ git remote add origin git@bitbucket.org:ben_albrecht/<RepoName>.git # add repo t
 git commit -a # If there is anything in the repo yet + adds them all to repository
 git push -u origin --all # pushes up the repo and its refs for the first time
 git push -u origin --tags # pushes up any tags
+

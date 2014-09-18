@@ -5,6 +5,19 @@
 #TODO: writing functions in vim
 #TODO: make Shift+Tab (in insert mode) delete 4 spaces
 
+# Auto-Indentation
+# insert-mode
+# indent line
+  CTRL-t 
+# unindent line
+  CTRL-d
+# normal mode
+# indent
+>>
+# unindent
+<<
+ 
+
 
 # sed
 :s/foo/bar/g        Change each 'foo' to 'bar' in the current line.
