@@ -1,0 +1,11 @@
+% = IPython magic functions
+
+%whos - interactive namespace (variable, type, data/info)
+
+Turn on auto-opdates for our pyc files 
+%load_ext autoreload
+%autoreload 2
+
+'object'? => details about object
+'object'?? => where in source code object is defined
+

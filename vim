@@ -5,6 +5,13 @@
 #TODO: writing functions in vim
 #TODO: make Shift+Tab (in insert mode) delete 4 spaces
 
+# Sessions
+:mksession ~/mysession.vim
+
+:source ~/mysession.vim
+# OR
+vim -S ~/mysession.vim
+
 # Auto-Indentation
 # insert-mode
 # indent line
