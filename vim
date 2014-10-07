@@ -5,6 +5,10 @@
 #TODO: writing functions in vim
 #TODO: make Shift+Tab (in insert mode) delete 4 spaces
 
+# Open files with split
+vim -o file1 file2 # Horizontal
+vim -O file1 file2 # Vertical
+
 # Sessions
 :mksession ~/mysession.vim
 
@@ -82,13 +86,12 @@ vim -c "1,2fold| mkview" file.txt
 
 zf
 #Delete Fold
-
 zd
+#Delete All Folds
+zE
+
 #Open Fold
-
 zo
-#OR
-
 <Right arrow Key>
 #Close Fold
 
