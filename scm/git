@@ -1,7 +1,8 @@
 # Git
 
-# My git address:  
+# My bitbucket address:  
 # git@bitbucket.org:ben_albrecht/
+# https://github.com/benalbreck/
 
 # Drop current unstaged changes
 git stash save --keep-index
