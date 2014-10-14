@@ -5,13 +5,25 @@ https://github.com/exit-1/
 # Bitbucket Address:
 git@bitbucket.org:ben_albrecht/
 
+
 # Migrating bitbucket repo to github repo
+cd $HOME/dev/Pipelines
+git remote rename origin bitbucket
+# MAKE A NEW GIT REPO ON GITHUB
+git remote add origin https://github.com/edwardaux/Pipelines.git
+git push origin master
+git remote rm bitbucket
+
+# OR
+
 git clone --mirror https://bitbucket.org/exampleuser/repository-to-mirror.git
 # Make a bare mirrored clone of the repository
 cd repository-to-mirror.git
 git remote set-url --push origin https://github.com/exampleuser/mirrored
 # Set the push location to your mirror
 git push --mirror
+
+
 
 # Drop current unstaged changes
 git stash save --keep-index
