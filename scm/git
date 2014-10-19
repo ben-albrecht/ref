@@ -5,6 +5,8 @@ https://github.com/exit-1/
 # Bitbucket Address:
 git@bitbucket.org:ben_albrecht/
 
+# Remove untracked directories
+clean -fd
 
 # Migrating bitbucket repo to github repo
 cd $HOME/dev/Pipelines
