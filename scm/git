@@ -9,10 +9,10 @@ git@bitbucket.org:ben_albrecht/
 clean -fd
 
 # Migrating bitbucket repo to github repo
-cd $HOME/dev/Pipelines
+cd $HOME/repos/repository
 git remote rename origin bitbucket
 # MAKE A NEW GIT REPO ON GITHUB
-git remote add origin https://github.com/edwardaux/Pipelines.git
+git remote add origin https://github.com/exit-1/repository.git
 git push origin master
 git remote rm bitbucket
 
