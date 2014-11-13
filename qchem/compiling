@@ -1,0 +1,37 @@
+# Compiling Q-Chem On Ubuntu #
+## Prerequisites: ##
+### Modules ###
+* Set up modules
+
+### QC_EXT_LIBS ###
+#### Math-Libraries ####
+* Confirmed Working
+    * ACML Version 5:
+        * http://developer.amd.com/tools-and-sdks/cpu-development/amd-core-math-library-acml/acml-downloads-resources/
+* Unconfirmed
+    * OpenBLAS
+    * MKL - Eric claims it works
+    * atlas
+
+### QCAUX ###
+* svn checkout $QCAUXSVN/trunk $QCAUX
+* wget http://www.q-chem.com/download/qc4010/drivers/drivers.small.tar.gz
+
+
+
+
+## Step-by-Step ##
+
+1. Checkout q-chem trunk or branch from SVN jubilee server or odysseus git repository
+
+* Load ze modules
+
+* Run qcmake gcc
+
+* ???
+
+* Profit
+
+
+
+
