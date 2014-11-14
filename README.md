@@ -5,7 +5,7 @@ I'll usually add something to this repository when I find myself googling it 2 o
 I've also made a handy bash script over in my [scripts repo](https://github.com/exit-1/scripts/blob/master/ref) to access the reference files quickly.
 
 ### Potentially Useful to You
-* [Compiling Q-Chem](https://github.com/exit-1/ref/blob/master/qchem/compiling)
+* [Compiling Q-Chem](https://github.com/exit-1/ref/blob/master/qchem/compiling.md)
 
 ## To Do:
 
