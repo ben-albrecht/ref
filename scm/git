@@ -1,5 +1,13 @@
 # Git
 
+
+# See changes to be made on current commit
+git diff
+# or
+git diff <file>
+
+#Store git credentials
+git config credential.helper store
 # Git Address:
 https://github.com/exit-1/
 # Bitbucket Address:
