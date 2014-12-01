@@ -1,6 +1,9 @@
 # Git
 
 
+# See what has changed since previous commit (-1 = last commit, -2 = last last commmit ... )
+git whatchanged -1
+
 # See changes to be made on current commit
 git diff
 # or
@@ -39,8 +42,6 @@ git push --mirror
 git stash save --keep-index
 git stash drop
 
-# See what has changed since previous commit (-1 = last commit, -2 = last last commmit ... )
-git whatchanged -1
 
 # Recommended to use this alias for git up instead of git pull
     # Prevents nonlinearities in git history
