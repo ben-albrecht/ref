@@ -1,4 +1,4 @@
-#BASH
+== BASH == 
 
 # Run bash script in debug mode (outputs all commands being performed)
 '#!/bin/sh -x'

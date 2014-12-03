@@ -1,5 +1,3 @@
-#!/bin/bash
-
 #AWK/SED (General Text Editing Tricks)
 #Replace all instances of a particular string in all files, recursively in a directory, with another string
 grep -rl matchstring somedir/ | xargs sed -i 's/string1/string2/g'

@@ -1,1 +1,8 @@
 http://sourceforge.net/p/modules/wiki/FAQ/
+
+== Modules ==
+module avail
+module load <name>
+module list 
+module help <name>
+module spider <name>

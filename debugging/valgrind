@@ -10,3 +10,8 @@ valgrind $QC/exe/qcprog.exe ./foo.in ./foo_scratch
 logfile: --log-file=out.log
 turn off error limit: --error-limit=no
     allows number of errors to exceed 1million (happens in q-chem sometimes)
+
+
+== Profiling ==
+valgrind --tool=callgrind ./(Your binary)
+
