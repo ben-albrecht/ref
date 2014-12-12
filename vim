@@ -19,7 +19,7 @@ vim -S ~/mysession.vim
 # Auto-Indentation
 # insert-mode
 # indent line
-  CTRL-t 
+  CTRL-t
 # unindent line
   CTRL-d
 # normal mode
@@ -27,7 +27,7 @@ vim -S ~/mysession.vim
 >>
 # unindent
 <<
- 
+
 
 
 # sed
@@ -38,8 +38,8 @@ vim -S ~/mysession.vim
 :.,$s/foo/bar/g     Change each 'foo' to 'bar' for all lines from the current line (.) to the last line ($) inclusive.
 :.,+2s/foo/bar/g    Change each 'foo' to 'bar' for the current line (.) and the two next lines (+2).
 :g/^baz/s/foo/bar/g Change each 'foo' to 'bar' in each line starting with 'baz'.
-:'<,'>s/foo/bar/g   When compiled with +visual, change each 'foo' to 'bar' for all lines within a visual selection. 
-                    Vim automatically appends the visual selection range ('<,'>) for any ex command when you select 
+:'<,'>s/foo/bar/g   When compiled with +visual, change each 'foo' to 'bar' for all lines within a visual selection.
+                    Vim automatically appends the visual selection range ('<,'>) for any ex command when you select
                     an area and enter :. Also, see Note below.
 
 # Tabs
@@ -109,20 +109,26 @@ zc
 # ##### #
 
 #Get changes from other window into the current window.
-odo 
+odo
 
 #Put the changes from current window into the other window.
-dp 
+dp
 
 #Jump to the next change.
-]c 
+]c
 
 #Jump to the previous change.
-[c 
+[c
 
 # Turn it off!
 :diffoff
 
 #Switch to the other split window (CTRL-W CTRL-W does the same
 #thing, in case you let go of the CTRL key a bit later)
-Ctrl W + w 
+Ctrl W + w
+
+== Plugins ==
+
+# Installing YCM on Mac
+# Make sure to brew unlink python
+# Why did I have a python installation via homebrew anyway?
