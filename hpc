@@ -11,6 +11,17 @@ jobs -l
 # List my jobs
 qstat -u bja39
 
+# Check job status
+checkjob <ID>
+showstart <ID>
+
+# show queue info
+qstat -q <queue>
+qstat -Q <queue>
+frank-avail <queue>
+
+
+
 # Summary of balance
 showq -w user=bja39
 mybalance -h
