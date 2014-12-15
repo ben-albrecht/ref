@@ -9,6 +9,9 @@ git diff
 # or
 git diff <file>
 
+# pip install directly from git-repo
+pip install git+git://github.com/myuser/foo.git
+
 #Store git credentials
 git config credential.helper store
 # Git Address:
