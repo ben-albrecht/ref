@@ -1,12 +1,12 @@
 # Compiling Q-Chem On Ubuntu #
 ## Prerequisites: ##
 ### Modules (TODO)
-#### Install Modules
-#### Set up Modules
-##### Download from git-repo
-##### Set up procs.tcl and .bashrc edits
-##### Edits to etc/modules or whatever
-##### module use, module avail, module load
+* Install Modules
+* Set up Modules
+* Download module files from my git-repo
+* Set up procs.tcl and .bashrc edits
+* Edits to etc/modules or whatever
+* module use, module avail, module load
 
 The remainder of this guide assumes you have modules set up properly.
 
