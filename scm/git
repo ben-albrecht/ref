@@ -1,6 +1,10 @@
 # Git
 
 
+# Create local copy and checkout git branch
+# http://stackoverflow.com/questions/1783405/checkout-remote-git-branch
+git checkout -b <branch> origin/<branch>
+
 # See what has changed since previous commit (-1 = last commit, -2 = last last commmit ... )
 git whatchanged -1
 
