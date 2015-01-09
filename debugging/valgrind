@@ -15,3 +15,6 @@ turn off error limit: --error-limit=no
 == Profiling ==
 valgrind --tool=callgrind ./(Your binary)
 
+
+== KCacheGrind Compatibility ==
+valgrind --tool=callgrind -v --dump-every-bb=10000000 <executable>
