@@ -109,7 +109,7 @@ zc
 # ##### #
 
 #Get changes from other window into the current window.
-odo
+do
 
 #Put the changes from current window into the other window.
 dp
