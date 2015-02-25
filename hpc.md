@@ -20,7 +20,9 @@ Priority = Initial
     * dist_fast = 192
     * dist_ivy 160
     * mem48g = no limit!!
+    * nehalem = 24 GB ram, 200 GB scratch, 8 ppn
 
+    * To get access:
     * ib = 128
 
 
