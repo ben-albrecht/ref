@@ -14,12 +14,12 @@ git diff
 git diff <file>
 
 # pip install directly from git-repo
-pip install git+git://github.com/myuser/foo.git
+pip install git+https://github.com/myuser/foo.git
 
 #Store git credentials
 git config credential.helper store
 # Git Address:
-https://github.com/exit-1/
+https://github.com/ben-albrecht/
 # Bitbucket Address:
 git@bitbucket.org:ben_albrecht/
 
@@ -30,7 +30,7 @@ clean -fd
 cd $HOME/repos/repository
 git remote rename origin bitbucket
 # MAKE A NEW GIT REPO ON GITHUB
-git remote add origin https://github.com/exit-1/repository.git
+git remote add origin https://github.com/ben-albrecht/repository.git
 git push origin master
 git remote rm bitbucket
 
