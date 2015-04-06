@@ -7,11 +7,11 @@ http://sourceforge.net/p/modules/wiki/FAQ/
 
 ## Get a procs.tcl
 
-* Example procs.tcl available at [modules page](https://github.com/exit-1/modules/procs.tcl)
+* Example procs.tcl available at [modules page](https://github.com/ben-albrecht/modules/blob/master/procs.tcl)
 
 ## Set up a module directory/file
 
-* Examples available on my [github page](https://github.com/exit-1/modules/procs.tcl)
+* Examples available on my [github page](https://github.com/ben-albrecht/modules)
 
 ## Put `module use` in .bashrc
 
