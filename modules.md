@@ -1,6 +1,6 @@
 http://sourceforge.net/p/modules/wiki/FAQ/
 
-= How to Set Up Modules =
+# How to Set Up Modules =
 == Install modules package ==
 
 * Ubuntu: apt-get install modules-environment (?)
