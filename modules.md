@@ -3,8 +3,7 @@ http://sourceforge.net/p/modules/wiki/FAQ/
 # How to Set Up Modules
 ## Download and build [modules package](http://sourceforge.net/projects/modules/)
 
-* Ubuntu: apt-get install modules-environment (?)
-* Mac OS X: brew install modules (?)
+* Ubuntu: apt-get install modules-environment
 
 ## Get a procs.tcl
 
