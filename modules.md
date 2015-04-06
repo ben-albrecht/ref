@@ -1,7 +1,7 @@
 http://sourceforge.net/p/modules/wiki/FAQ/
 
 # How to Set Up Modules
-## Install modules package
+## Download and build [modules package](http://sourceforge.net/projects/modules/)
 
 * Ubuntu: apt-get install modules-environment (?)
 * Mac OS X: brew install modules (?)
