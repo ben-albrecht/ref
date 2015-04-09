@@ -13,7 +13,7 @@ The remainder of this guide assumes you have modules set up properly.
 ### $QC_EXT_LIBS
 #### Compilers
 * Intel Compilers
-    * Get the free student version, a real license, or from a friend)
+    * Get the free student version (linux), a real license ($$)
     * Fix Ubuntu STD library locations
     * `/usr/include/c++/4.8/bits`
     * `sudo ln -s ../../../x86_64-linux-gnu/c++/4.8/bits/* .`
@@ -21,11 +21,12 @@ The remainder of this guide assumes you have modules set up properly.
 * GNU Compilers Compilation (gcc)
     * Install gcc
     * Mac Options:
-    ** brew install gcc
-    ** [download](http://sourceforge.net/projects/hpc/files/hpc/gcc/gcc-4.9-bin.tar.gz/download?use_mirror=softlayer-dal&download=) and
+        * brew install gcc
+        * [download](http://sourceforge.net/projects/hpc/files/hpc/gcc/gcc-4.9-bin.tar.gz/download?use_mirror=softlayer-dal&download=) and
     [build gcc](https://wiki.helsinki.fi/display/HUGG/Installing+the+GNU+compilers+on+Mac+OS+X)
 
-#### Math-Libraries
+#### Math-Libraries (Choose one)
+
 * MKL
     * As part of Intel's [parallel studio compiler suite](https://software.intel.com/en-us/intel-parallel-studio-xe)
 * [OpenBLAS](https://github.com/xianyi/OpenBLAS)
@@ -41,18 +42,21 @@ The remainder of this guide assumes you have modules set up properly.
     *  Symbolically link (ln -s) path to acml/gfortran64/include/acml.h into ACML/include/
     *  Symbolically link (ln -s) path to acml/gfortran64/lib/libacml.a and libacml_mp.a into ACML/lib/
 
-* [atlas](http://math-atlas.sourceforge.net/)
+* [ATLAS](http://math-atlas.sourceforge.net/)
 
+#### BLAS + LAPACK (Necessary)
 * [BLAS](http://www.netlib.org/blas/) + [LAPACK](http://www.netlib.org/lapack/)
+    * Easy enough to build from scratch (requires gcc), but also available on homebrew / apt-get
+
 #### FFTW - Optional (TODO)
 
 
 
 ### $QCAUX
-	cd $QCAUX
-	svn checkout $QCAUXSVN/trunk .
-	wget http://www.q-chem.com/download/qc4010/drivers/drivers.small.tar.gz
-	tar -xvf drivers.small.tar.gz
+cd $QCAUX
+svn checkout $QCAUXSVN/trunk .
+wget http://www.q-chem.com/download/qc4010/drivers/drivers.small.tar.gz
+tar -xvf drivers.small.tar.gz
 
 
 
@@ -64,13 +68,13 @@ The remainder of this guide assumes you have modules set up properly.
 * Load ze modules
 
 * Build it
-	* **Use** `qcmake gcc`
-		* Get qcmake from my scripts [git-repository](https://github.com/exit-1/scripts/blob/master/qcmake)
+    * **Use** `qcmake -h`
+        * Get qcmake from my scripts [git-repository](https://github.com/ben-albrecht/scripts/blob/master/qcmake)
 
-	* **or**  `./configure ./configure gcc nointracule nomgc noopt2 nolibdftn nonewpath2 debug acml`, `cd build`, and `make`
+    * **or**  `./configure ./configure gcc nointracule nomgc noopt2 nolibdftn nonewpath2 debug acml`, `cd build`, and `make`
 
-* `.....`
- `Building CXX object CMakeFiles/qcprog.exe.dir/main.C.o`
+.....
+`Building CXX object CMakeFiles/qcprog.exe.dir/main.C.o`
 `Linking CXX executable qcprog.exe`
 `[100%] Built target qcprog.exe`
 `????`
