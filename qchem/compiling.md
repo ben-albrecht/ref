@@ -20,24 +20,30 @@ The remainder of this guide assumes you have modules set up properly.
     * You will have to do this for future versions of C++ STD Library
 * GNU Compilers Compilation (gcc)
     * Install gcc
+    * Mac Options:
+    ** brew install gcc
+    ** [download](http://sourceforge.net/projects/hpc/files/hpc/gcc/gcc-4.9-bin.tar.gz/download?use_mirror=softlayer-dal&download=) and
+    [build gcc](https://wiki.helsinki.fi/display/HUGG/Installing+the+GNU+compilers+on+Mac+OS+X)
 
 #### Math-Libraries
-##### Confirmed Working (by me)
-* ACML
+* MKL
+    * As part of Intel's [parallel studio compiler suite](https://software.intel.com/en-us/intel-parallel-studio-xe)
+* [OpenBLAS](https://github.com/xianyi/OpenBLAS)
+    * Issues:
+        * Compile Errors - undefined references to OpenBLAS functions
+    * Mac: Brew installation will put OpenBlas in /usr/local/opt/openblas
+    * symbolic link this openblas to $QC_EXT_LIBS
+* [ACML](http://developer.amd.com/tools-and-sdks/cpu-development/amd-core-math-library-acml/acml-downloads-resources/)
     * Crashes with gen_scfman, when compiled with gcc
-    1. Download [ACML Version 5 ](http://developer.amd.com/tools-and-sdks/cpu-development/amd-core-math-library-acml/acml-downloads-resources/)
+    1. Download ACML
     *  Run installer shell script, and install in desired location, e.g. /home/ben/opt/acml5.3.1
     *  Create (mkdir) ACML directory in $QC_EXT_LIBS with subdirectories lib/ and include/
     *  Symbolically link (ln -s) path to acml/gfortran64/include/acml.h into ACML/include/
     *  Symbolically link (ln -s) path to acml/gfortran64/lib/libacml.a and libacml_mp.a into ACML/lib/
 
-##### Unconfirmed (by me)
-* OpenBLAS
-	* Compile Errors - undefined references to OpenBLAS functions
-* MKL
-	* Eric claims it works
-* atlas
+* [atlas](http://math-atlas.sourceforge.net/)
 
+* [BLAS](http://www.netlib.org/blas/) + [LAPACK](http://www.netlib.org/lapack/)
 #### FFTW - Optional (TODO)
 
 
