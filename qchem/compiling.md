@@ -83,8 +83,13 @@ For distributed MPI parallelization (pick one)
 ## $QCAUX
     cd $QCAUX
     svn checkout $QCAUXSVN/trunk .
-    wget http://www.q-chem.com/download/qc4010/drivers/drivers.small.tar.gz
+    wget http://www.q-chem.com/download/qc_latest/drivers/drivers.small.tar.gz
     tar -xvf drivers.small.tar.gz
+  
+* Linux x86	http://www.q-chem.com/download/qc_latest/drivers/drivers.small.tar.gz
+* MacOS x86	http://www.q-chem.com/download/qc_latest/drivers/drivers.MAC_Ix86.tar.gz
+
+
 
 
 
