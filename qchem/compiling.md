@@ -27,6 +27,8 @@ The remainder of this guide assumes you have modules set up properly.
     * `brew install gcc`
     * [Build instructions for OSX](https://wiki.helsinki.fi/display/HUGG/Installing+the+GNU+compilers+on+Mac+OS+X)
     
+#### Issues
+* OSX: Change `isnan` to `std::isnan` in `$QC/subrot/subrot_common.C`
 
 ## Math Libraries (Choose one)
 
@@ -38,8 +40,11 @@ The remainder of this guide assumes you have modules set up properly.
 * OSX: Brew installation will put OpenBlas in `/usr/local/opt/openblas`
 * Symbolic link to `$QC_EXT_LIBS/OpenBLAS/..`
 
-#### Issues:
+#### Issues
 * Compile Errors - undefined references to OpenBLAS functions
+* OSX: Unable to find blas.h:
+    * Hackish fix: Add `-I$QC_EXT_LIBS/OpenBLAS/include` to CXX_FLAGS in  `$QC/build/libtensor/CMakeFiles/tensor.dir/flags.make` 
+    
 
 
 ### ACML
@@ -52,9 +57,13 @@ The remainder of this guide assumes you have modules set up properly.
 #### Issues
 * gcc:
 	* gen_scfman crashes
+* Incompatible with OSX
 
 ### ATLAS
 * [Download here](http://math-atlas.sourceforge.net/)
+
+#### Issues
+* Haven't been able to compile this yet...
 
 ## BLAS
 * [Download here](http://www.netlib.org/blas/)    
@@ -63,7 +72,7 @@ The remainder of this guide assumes you have modules set up properly.
 
 ## LAPACK
 * [Download here](http://www.netlib.org/lapack/)
-* * Easy enough to build from scratch (requires BLAS + gcc)
+* Easy enough to build from scratch (requires BLAS + gcc)
 
 
 ## Optional Libraries
@@ -81,10 +90,14 @@ For distributed MPI parallelization (pick one)
 
 
 ## $QCAUX
-    cd $QCAUX
-    svn checkout $QCAUXSVN/trunk .
-    wget http://www.q-chem.com/download/qc4010/drivers/drivers.small.tar.gz
-    tar -xvf drivers.small.tar.gz
+    svn checkout https://jubilee.q-chem.com/svnroot/qcaux/trunk/ $QCAUX
+    wget http://www.q-chem.com/download/qc_latest/drivers/drivers.small.tar.gz $QCAUX
+    tar -xvf $QCAUX/drivers.small.tar.gz $QCAUX
+  
+* Linux x86	http://www.q-chem.com/download/qc_latest/drivers/drivers.small.tar.gz
+* MacOS x86	http://www.q-chem.com/download/qc_latest/drivers/drivers.MAC_Ix86.tar.gz
+
+
 
 
 
