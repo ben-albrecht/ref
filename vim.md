@@ -13,20 +13,20 @@ OR
     vim -S ~/mysession.vim
 
 ## Auto-Indentation
-# insert-mode
-# indent line
+### insert-mode
+### indent line
     CTRL-t
-# unindent line
+### unindent line
     CTRL-d
-# normal mode
-# indent
+### normal mode
+### indent
     >>
-# unindent
+### unindent
     <<
 
 
 
-# sed
+## sed
 
    :s/foo/bar/g        
 Change each 'foo' to 'bar' in the current line.
@@ -54,7 +54,7 @@ When compiled with +visual, change each 'foo' to 'bar' for all lines within a vi
 Vim automatically appends the visual selection range ('<,'>) for any ex command when you select
 an area and enter :. Also, see Note below.
 
-# Tabs
+## Tabs
    :tabs         #list all tabs including their displayed windows
    :tabm 0       #move current tab to first
    :tabm         #move current tab to last
@@ -65,75 +65,75 @@ an area and enter :. Also, see Note below.
    :tabfirst     #go to first tab
    :tablast      #go to last tab
 
-# Switch to previously closed buffer
+### Switch to previously closed buffer
    :buffer #  (<num>)
    :b#
-# e.g. switch to buffer 3
+### e.g. switch to buffer 3
    :b3
 
-# List current buffers
+### List current buffers
    :ls
 
-# See value of variable in vim
+### See value of variable in vim
    :set var?
 
-# See value of all defined variables in vim
+### See value of all defined variables in vim
    :set all
 
-#Replace String ( g = global, often times g is default)
+###Replace String ( g = global, often times g is default)
    :%s/foo/bar/g
 
-#Dollar signs after everything:
+###Dollar signs after everything:
    :set nolist
 
-# Relops
+### Relops
    :set rnu
    :set !rnu
 
-#z-folds
-# Create fold from outside of file
+###z-folds
+### Create fold from outside of file
    vim -c "1,2fold| mkview" file.txt
 
-#Create fold (motion)
+###Create fold (motion)
 
    zf
-#Delete Fold
+###Delete Fold
    zd
-#Delete All Folds
+###Delete All Folds
    zE
 
-#Open Fold
+###Open Fold
    zo
    <Right arrow Key>
-#Close Fold
+###Close Fold
 
    zc
-# Search only in open folds
+### Search only in open folds
 
    :set fdo-=search
-# Perform commands only on lines in open folds
+### Perform commands only on lines in open folds
 
    :folddoopen <command>
-# e.g. s/old/new/ge
+### e.g. s/old/new/ge
 
 
-# vimdiff
+## vimdiff
 
-## Get changes from other window into the current window.
+### Get changes from other window into the current window.
     do
 
-## Put the changes from current window into the other window.
+### Put the changes from current window into the other window.
     dp
 
-## Jump to the next change.
+### Jump to the next change.
     ]c
 
-## Jump to the previous change.
+### Jump to the previous change.
     [c
 
-## Turn it off!
+### Turn it off!
     :diffoff
 
-##Switch to the other split window 
+###Switch to the other split window 
 (CTRL-W CTRL-W does the same thing, in case you let go of the CTRL key a bit later)
     Ctrl-W + w
